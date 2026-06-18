@@ -2,18 +2,25 @@
 <head>
 	<meta charset="utf-8">
 	<style>
-
-			@font-face {
-			    font-family: 'Pretendard-Regular';
-			    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
-			    font-weight: 400;
-			    font-display: swap;
+			
+				@font-face {
+			 font-family: 'Pretendard-Regular';
+			 src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+			 font-weight: 400;
+			 font-display: swap;
 		}
 
 				@font-face {
 		    font-family: 'Pretendard-Semibold';
-		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Semibold.woff2') format('woff2');
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
 		    font-weight: 600;
+		    font-display: swap;
+		}
+
+			@font-face {
+		    font-family: 'Pretendard-Black';
+		    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+		    font-weight: 900;
 		    font-display: swap;
 		}
 
@@ -36,21 +43,47 @@
 	nav, body, h1, h2, p, footer, section, header {margin:0px; padding: 0px;}
 	html{margin:0px; padding:0px; line-height:1.8; font-size:16px; word-break:keep-all; width:100%;}
 	nav{background:black; margin:auto; text-align:center; display:flex;}
-	li{list-style-type:none; color:white;}
-		 a{display:block; text-decoration:none; padding:0px 10px; text-align:center}
-		 a:hover{background:black; color:#CE0A0D;}
-	header{background:black; padding:0px 0px;}
-	h1{font-size:3rem; font-family:'Pretendard-Semibold'; text-align:center; color:white;}
-	h2{font-size:3rem; font-family:'Pretendard-Semibold'; text-align:center; color:white;}
-	section{padding:0px 0px; background:black;}
-	footer{padding:20px 0px; background:#CE0A0D;}
-	.background{background:#CE0A0D; padding:100px 0px;}
-	.plunderphonics{background:black; width:100%; overflow:clip; align-content:center;}
+	a{display:inline-block; text-decoration:none; padding:0px 0px; color:white;}
+	a:hover{background:black; color:#CE0A0D;}
+	header{background:transparent; padding:0px 0px;}
+	h1{font-size:8rem; font-family:'Pretendard-Black'; color:white; padding:0px 50px;}
+	h2{font-size:3rem; font-family:'Pretendard-Semibold'; color:white; padding:0px 50px;}
+	section{padding:0px 0px; background:transparent; overflow-x:hidden; overflow-y:hidden;}
+	footer{padding:100px 0px; background:#CE0A0D; text-align:center; color:white; font-family:'Alte-Din'; margin-top:-370px; font-size: 1.5rem;}
+	.background{background:#CE0A0D; padding:300px 0px;}
+	.steal{margin:auto; }
+	.deco{background:black; width:80%; overflow:clip; align-content:center; position:relative; left:200px; bottom:399px; padding:360px 0px;}
+	.relate{position:relative; left:0px; bottom:790px; overflow:clip; background:black; padding:90px 0px; width:78%;}
+	.derivative{position:relative; left:238px; top:130px; background:#CE0A0D; width:83.6%; padding:380px 0px;}
+	.thoughts{background:black; padding:200px 0px; text-align:center; position:relative; left:0px; bottom:1130px;}
+	.mine{font-family:'Pretendard-Black'; font-size:4rem; color:white; text-align:center; position:relative; left:0px; bottom:90px;}
+	.idea1{padding:30px 0px; line-height: 1.4; font-family:'Pretendard-Semibold';}
+	.idea2{position:relative; color:#CE0A0D; left:0px; bottom:40px; font-family:'Pretendard-Semibold';}
+	.original{position:relative; left:0px; top:45px; line-height: 1.5; font-family:'Pretendard-Regular'; font-size:3rem; color:white;}
+	.images{position:relative; left:0px; bottom:1000px;}
+	.art{position:relative; left:0px; bottom:1000px; padding:300px 0px; text-align:right; color:white; width:100%; font-family:'Pretendard-Regular'; background: transparent;}
+	.group{position:relative; left:0px; bottom:2500px; background:transparent;}
+	.text{position:relative; left:260px; bottom:0px; background:#CE0A0D; padding:400px 0px; width:85%;}
+	.speak{position:relative; right:90px; top:310px; padding:0px 0px; font-size:2rem;}
+	.move{position:relative; left:0px; bottom:2460px;}
+	.creative{background:#CE0A0D; width:100%; height:120px; position:relative; bottom:0px; left:0px; transform-origin:bottom; z-index:999; text-overflow:clip; overflow:hidden;}
+	.uncreative{font-family:'Alte-Din'; color:white; font-size:2rem; right:100%; bottom:30px; position:absolute; transform:translateX(-50%); animation:scroll 500s linear infinite; white-space:nowrap; animation-play-state:running;}
+	.quote{font-family:'Pretendard-Semibold'; font-size:2rem; padding:80px 80px; line-height:1.5;}
+	.copy{font-family:'Alte-Din'; font-size:8rem; background:#CE0A0D; color:white; padding:60px 150px; text-align:center; line-height:1.4; display:inline-block; position:relative; left:80px;}
+	.similar{font-family:'Pretendard-Semibold'; font-size:5.5rem; color:#CE0A0D; padding:100px 0px; text-align:center; line-height:1.4;}
+	.showyou{background:black; padding:400px 0px; position:absolute; left:0px; top:7600px; width:100%;}
+	.info{color:white; font-family:'Pretendard-Regular'; position:relative; bottom:270px; font-size:1.4rem; text-align:right; padding:0px 40px;}
+	.greatartists{color:white; font-size:4rem; text-align:center; font-family:'Pretendard-Semibold'; position:relative; left:60px; bottom:300px; display:flex;}
+	.disclaimer{position:relative; right:300px; top:440px;}
+	@keyframes scroll{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+	@keyframes zoom{from{font-size:60px}to{font-size:70px}}
+
+
 	.genre{color:white; background:#CE0A0D; padding:50px 0px; width:1200px; text-align:center; position:relative; left:130px; bottom:285px;}
 	.explanation{font-family:'Pretendard-Regular'; color:white; font-size:1.8rem; padding:80px 0px; text-align: center; position: relative; left:0px; bottom:200px;}
 	.examples{position:relative; left:0px; top:0px;}
 	.albums{position:relative; display:flex; align-content:center; padding:100px 0px; color:#CE0A0D; font-size:3rem;}
-	.return{font-family:'Alte-Din'; color:white; font-size:1.4rem; text-align:right; position:relative; padding:0px 40px;}
+	.return{font-family:'Alte-Din'; color:white; font-size:1.4rem; text-align:right; position:relative; padding:20px 40px;}
 
 	</style>
 	<title>The Art of the Steal</title>
@@ -58,56 +91,92 @@
 <body>
 	<nav></nav>
 	<header>
-		<div class="plunderphonics">
-			<div class="background"></div>
-			<img src="Plunderphonics.png" style="width:120%; right:150px; bottom:380px; position:relative;">
+		<div class="background">
+		</div>
+		<div class="deco">
+			<p>placeholder</p>
+		</div>
+		<div class="steal">
+			<img src="The Art of the Steal.png" style="width:80%; right:300px; top:100px; position:absolute;">
 		</div>
 	</header>
 	<section>
-		<div class="genre">
-			<h1>
-				이미 존재하는 곡을 샘플링하여 새로운 곡을 만드는 장르.
-			</h1>
+		<div class="derivative">
+			<p style="color:#CE0A0D">placeholder</p>
+		</div>
+		<div class="relate">
+			<h2>어떤 식으로든, 예술을 한다면 공감할 수 있을 것이다.</h2>
+		</div>
+		<div class="steal">
+			<img src="Derivative.png" style="width:85%; left:200px; bottom:700px; position:relative;">
+		</div>
+		<div class="steal">
+			<img src="ShinjiSit.png" style="width:120%; left:300px; bottom:1040px; position:relative;">
 		</div>
 	</section>
-	<section>
-		<div class="explanation">
-			<p>Plunderphonics라는 명칭은 “훔치다, 약탈하다"를 뜻하는</p>
-			<p>Plunder 그리고 “소리"를 뜻하는 Phonics를 합하여 만들어졌고,</p>
-			<p>작곡가 John Oswald의 “Plunderphonics, or Audio Piracy</p>
-			<p>as a Compositional Prerogative” 에세이에서 처음 사용되었다.</p>
+	<section class="thoughts">
+		<div class="mine">
+			<h1>"내 것"</h1>
+			<p class="idea1">이라 할 수 있는 아이디어를 생각해 내는 것이</p>
+			<p class="idea2">얼마나 어려운지.</p>
+		</div>
+		<div class="original">
+			<p>완전한 독창성이 아무리 불가능하다 해도</p>
+			<p>자주 고민하게 된다.</p>
+			<p>왜 계속 기존에 것에 의존하게 되는 것이지??</p>
 		</div>
 	</section>
-	<section>
-		<div class="explanation">
-			<p>샘플링은 힙합 등 다양한 장르에서 이용되고 있지만,</p>
-			<p>plunderphonics는 샘플링된 음원들이 곡 자체를</p>
-			<p>구성한다는 점에서 타 장르와의 차이를 보인다.</p>
+	<section class="art">
+		<div class="text">
+			<p class="speak">올해 작업한 일러스트 몇가지.</p>
+			<p class="speak">2장은 팬아트고, 3장 다 사진 보면서 작업했다...</p>
 		</div>
 	</section>
-	<section>
-		<div class="explanation">
-			<p>	현 상태의 저작권법이 불러오는 폐해를</p>
-			<p>비판하기 위한 미디엄으로 사용되기도 한다.</p>
+	<section class="group">
+		<div class="">
+		<img src="ProjectEntropyZero.png" style="width:40%; left:40px; bottom:400px; position:relative;">
+		<img src="Aquarium.png" style="width:41.2%; left:60px; top:20px; position:relative;">
+		<img src="ShoeEater.png" style="width:40%; left:40px; bottom:400px; position:relative;">
 		</div>
 	</section>
-	<section>
-		<div class="examples">
-			<h2>대표적인 Plunderphonics 앨범들</h2>
+	<section class="move">
+		<div class="creative">
+			<p class="uncreative">Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative Uncreative Creative</p>
 		</div>
-		<div class="albums">
-			<img src="Since I Left You.webp" style="width:40%; left:100px; top:0px; position:relative;">
-			<img src="Donuts.webp" style="width:40%; left:200px; top:0px; position:relative;">
+		<div class="quote">
+			<p>방금 생각난 격언이 있다.</p>
 		</div>
-		<div class="albums">
-			<p style="left:230px; bottom:140px; position:relative; font-family:'Tasman'; line-height:1.2;">Since I Left You<br>(The Avalanches)</p>
-			<p style="left:650px; bottom:140px; position:relative; font-family:'Helvetica-Bold'; line-height:1.2;">Donuts<br>(J Dilla)</p>
+		<div class="copy">
+			<p>"Good artists Copy.<br>Great artists steal.</p>
+		</div>
+		<div class="quote">
+			<p style="text-align:right;">흔히 피카소가 한 말로 알려져 있지만,<br>사실 정확히 누구의 격언인지는 알 수 없다. </p>
+		</div>
+		<div class="similar">
+			<p>이와 비슷한 격언을 남긴 창작자가<br>너무너무너무 많기 때문에.</p>
+		</div>
+		<div class="creative">
+			<p class="uncreative">... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ... T. S Elliot W. H. Davenport Adams Pablo Picasso Steve Jobs Lionel Trilling Igor Stravinsky William Faulkner ...</p>
+		</div>
+		<div class="quote">
+			<p style="text-align:right; padding:80px 0px;">그래서 준비했다.<br>위대한 예술가들이 훔친다는 게 정확히 뭔 뜻인지,<br>직접 귀로 들어볼 수 있게.</p>
+		</div>
+	</section>
+	<section class="showyou">
+		<div class="greatartists">
+			<p style="position:relative; right:20px;">독창적이지 못하다면,</p>
+			<a href="Menu.html">훔침의 미학</a>
+			<p>이 뭔지 보여주겠다고.</p>
+		</div>
+		<div class="info">
+			<p>(이제부터 텍스트가 붉게 보인다면 꼭 클릭해보기!!)</p>
+		</div>
+		<div class="disclaimer">
+			<img src="Disclaimer.png" style="width:143%; display:inline-block;">
 		</div>
 	</section>
 	<footer>
-		<div class="return">
-			<p>Return</p>
-		</div>
+		<p style="position:relative; top:90px; display:inline;">The Art of the Steal | Kyuyeon Park 2026 | Copyright lololol</p>
 	</footer>
 </body>
 </html>
